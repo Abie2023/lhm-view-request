@@ -18,7 +18,7 @@ export default function UserCard({ user }: { user: User }) {
         if (type === "dob") {
           return d.toLocaleDateString(undefined, { month: "short", day: "2-digit", year: "numeric" });
         }
-      } catch (e) {
+      } catch {
         return value ? String(value) : "";
       }
     }
@@ -45,7 +45,7 @@ export default function UserCard({ user }: { user: User }) {
           fontSize: expanded ? "1.15rem" : "1rem",
           boxShadow: expanded ? "0 8px 40px 0 rgba(0,0,0,0.18)" : undefined,
         }}
-        onClick={() => setExpanded((e) => !e)}
+        onClick={() => setExpanded((prev) => !prev)}
         tabIndex={0}
         aria-expanded={expanded}
       >
