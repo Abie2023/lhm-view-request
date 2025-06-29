@@ -14,9 +14,6 @@ export default async function Home() {
         <Sidebar />
         {/* Main Content */}
         <main className="flex-1 flex flex-col gap-8 items-center p-4 sm:p-8">
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
-            New Partners
-          </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
             {users.map((user) => (
               <UserCard key={user.id} user={user} />

@@ -36,10 +36,10 @@ export default function UserCard({ user }: { user: User }) {
     <>
       {overlay}
       <div
-        className={`bg-white rounded-xl shadow p-8 sm:p-10 transition-all duration-500 cursor-pointer border border-gray-200
+        className={`bg-white rounded-xl shadow p-6 sm:p-10 transition-all duration-500 cursor-pointer border border-gray-200
           ${expanded ?
             "fixed left-1/2 top-1/2 z-50 w-[90vw] max-w-2xl max-h-[90vh] overflow-y-auto -translate-x-1/2 -translate-y-1/2 scale-105" :
-            "relative w-full max-w-md mx-auto my-4 hover:shadow-lg hover:scale-[1.02]"}
+            "relative w-full max-w-md mx-auto my-2 sm:my-4 hover:shadow-lg hover:scale-[1.02]"}
         `}
         style={{
           fontSize: expanded ? "1.15rem" : "1rem",

@@ -26,6 +26,12 @@ export default function Sidebar() {
           >
             Request
           </Link>
+          <Link
+            href="/area"
+            className="px-3 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-100 font-medium"
+          >
+            Area
+          </Link>
         </nav>
       </aside>
     </>

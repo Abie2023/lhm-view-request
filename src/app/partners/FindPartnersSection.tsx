@@ -10,6 +10,7 @@ interface FindPartnersSectionProps {
   cityOptions: string[];
 }
 
+export const dynamic = "force-dynamic";
 export default function FindPartnersSection({ users, nameOptions, memberIdOptions, cityOptions }: FindPartnersSectionProps) {
   const [selectedName, setSelectedName] = useState("");
   const [selectedMemberId, setSelectedMemberId] = useState("");
